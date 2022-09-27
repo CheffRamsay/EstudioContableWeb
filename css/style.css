@@ -307,11 +307,21 @@ header{
     z-index: -10;
 }
 
+.back img{
+   width: 25vw;
+   height: 300vh;
+}
+
 .back2{
     position: absolute;
     top: 1400px;
     z-index: -10;
     left: 0px;
+}
+
+.back2 img{
+    width: 35vw;
+    height: 200vh;
 }
 
 .back2i{
