@@ -301,7 +301,7 @@ header{
 }
 .text-content{
    position: relative;
-   max-width: 500px;
+   max-width: 520px;
  
 }
 
@@ -474,9 +474,8 @@ header{
     margin: var(--margin-mobile);
     position: relative;
     height: 100%;
-    max-width: 0px;
-    width: 50%;
-    background: linear-gradient(141.9deg, #EEC14C 25.85%, #E7AD41 51.91%, #E39A34 73.04%, #D48528 91.06%);
+    background: transparent;
+    /*background: linear-gradient(141.9deg, #EEC14C 25.85%, #E7AD41 51.91%, #E39A34 73.04%, #D48528 91.06%);*/
     border-radius: 0px 0px 90px 0px;
     display: flex;
     align-items: center;
@@ -977,7 +976,7 @@ input{
     }
 
     .animated-text{
-        max-width: 400px;
+        max-width: 300px;
     }
 
     #show{
