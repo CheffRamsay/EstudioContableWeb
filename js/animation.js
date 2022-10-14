@@ -3,10 +3,14 @@ export function animation(){
 
     const sectionsToAnimate = d.querySelectorAll(".animacion");
    
+   
     const cb = (entries) =>{
         entries.forEach(entry =>{
             if(entry.isIntersecting){
               entry.target.classList.add("fade-in-bottom");
+              if(entry.target.classList[0] === "text-card"){
+                entry.target.classList.add("fade-in-bottom-delay-1");
+              }
             }
         })
     }

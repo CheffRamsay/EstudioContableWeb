@@ -132,6 +132,10 @@ textarea{
   .fade-in-bottom {
 	animation: fade-in-bottom 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   }
+
+  .fade-in-bottom-delay-1 {
+	animation: fade-in-bottom 1.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
   
 
 #show{
@@ -1289,7 +1293,7 @@ input{
     }
 
     .servicios-container{
-        margin-top: 395px;
+        margin-top: 500px;
         padding-left: 120px;
         padding-right: 120px;
     }
