@@ -129,13 +129,40 @@ textarea{
     }
   }
 
+  @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
   .fade-in-bottom {
-	animation: fade-in-bottom 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   }
 
   .fade-in-bottom-delay-1 {
-	animation: fade-in-bottom 1.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: fade-in-bottom 1.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   }
+
+  .fade-in-bottom-delay-2 {
+	animation: fade-in-bottom 1.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+
+  .fade-in {
+	-webkit-animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
   
 
 #show{
@@ -415,6 +442,7 @@ header{
 
 .text-card{
     margin-top: 20px;
+    animation-delay: 0.3s;
 }
 
 .botones-container{
@@ -732,6 +760,7 @@ header{
     font-size: 26px;
     line-height: 103.02%;
     color: var(--color-white);
+    
 }
 
 .backgroud-container p{
@@ -744,6 +773,7 @@ header{
     /* or 19px */
     text-align: center;
     color: var(--color-white); 
+    
 }
 
 /********************************* END QUIENES SOMOS**************************************************************/
@@ -788,7 +818,6 @@ header{
 
 .boton-enviar{
     display: flex;
-    justify-content: center;
     width: 100%!important;
     
 }
@@ -804,6 +833,21 @@ header{
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
+.txt-contacto-1{
+    animation-delay: 0.1s;
+}
+
+.txt-contacto-2{
+    animation-delay: 0.2s;
+}
+
+.txt-contacto-3{
+    animation-delay: 0.3s;
+}
+
+
+
 
 .texto-formulario p{
     font-family: var(--font-1);
@@ -825,7 +869,7 @@ header{
     color: var(--color-white);
 }
 
-.texto-formulario span{
+.texto-formulario h5{
     font-family: var(--font-1);
     font-display: swap;
     font-style: normal;
@@ -945,11 +989,51 @@ input{
 }
 
 .icon {
+   
     color: white;
     padding: 1rem;
     width: 150px;
     filter: brightness(0) saturate(100%) invert(12%) sepia(12%) saturate(2282%) hue-rotate(190deg) brightness(90%) contrast(54%);
 }
+
+.links-interes-container a{
+     opacity: 0;
+    
+}
+
+.links-interes-container a:first-child{
+    animation-delay: 0.1s;
+}
+
+.links-interes-container a:nth-child(2){
+    animation-delay: 0.2;
+}
+
+.links-interes-container a:nth-child(3){
+    animation-delay: 0.3s;
+}
+
+.links-interes-container a:nth-child(4){
+    animation-delay: 0.4s;
+}
+
+.links-interes-container a:nth-child(5){
+    animation-delay: 0.5s;
+}
+
+.links-interes-container a:nth-child(6){
+    animation-delay: 0.1s;
+}
+
+.links-interes-container a:nth-child(7){
+    animation-delay: 0.2s;
+}
+
+.links-interes-container a:nth-child(8){
+    animation-delay: 0.3s;
+}
+
+
 
 .icon-afip{
     width: 180px;
@@ -977,6 +1061,14 @@ input{
 .texto-enlaces{
     text-align: center;
     padding-bottom: 30px;
+}
+
+.texto-enlaces-1{
+    animation-delay: 0.1s;
+}
+
+.texto-enlaces-2{
+    animation-delay: 0.3s;
 }
 
 @media (min-width: 600px){
@@ -1222,6 +1314,7 @@ input{
 
     .h2-servicios{
         margin-bottom: 80px;
+        animation-delay: 0.2s;
     }
 
     .servicios-container h2{
@@ -1372,7 +1465,7 @@ input{
 
     .g-recaptcha {
         margin: 10px 0px 0px 0px!important;
-        transform: scale(1) translate(58px);
+        transform: scale(1) translate(0px);
     }
 
     .recaptcha-error{

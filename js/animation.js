@@ -1,16 +1,21 @@
 export function animation(){
     const d = document;
 
-    const sectionsToAnimate = d.querySelectorAll(".animacion");
-   
+    const sectionsToAnimate = d.querySelectorAll(".animacion, .enlace-gob");
+    
    
     const cb = (entries) =>{
         entries.forEach(entry =>{
+            
             if(entry.isIntersecting){
-              entry.target.classList.add("fade-in-bottom");
-              if(entry.target.classList[0] === "text-card"){
-                entry.target.classList.add("fade-in-bottom-delay-1");
+              if(entry.target.classList[1] === "animacion"){
+                 entry.target.classList.add("fade-in-bottom");
               }
+             
+              if(entry.target.classList[0] === "enlace-gob"){
+                entry.target.classList.add("fade-in");
+              }
+      
             }
         })
     }
@@ -21,7 +26,7 @@ export function animation(){
      });
 
     //A cada section le agregamos atributo observe
-     sectionsToAnimate.forEach(el => {
+    sectionsToAnimate .forEach(el => {
         el.style.opacity = "0";
         observer.observe(el);
      })
