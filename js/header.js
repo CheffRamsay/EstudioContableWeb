@@ -5,6 +5,10 @@ export function header(){
     const containerMenu = d.querySelector(".header");
     const hambur = d.querySelector(".hamburger");
     const nodoButton = d.querySelectorAll(".nodobutton");
+    const redesHeader = d.querySelector(".redes-cel-container");
+    const textHeader = d.querySelector(".text-header h1");
+    const menu = d.querySelector(".header");
+    const logoHeader = d.querySelector(".logo-header");
 
     const ToggleAnimationButton = el =>{
         hambur.addEventListener("click", e=>{
@@ -30,6 +34,22 @@ export function header(){
         containerMenu.classList.remove("menu-abierto");
     }
 
+    const menuFixedAndThin = () =>{
+        menu.style.position = "fixed";
+        menu.style.height = "90px";
+        redesHeader.classList.add("display-none");
+        textHeader.classList.add("display-none");
+        logoHeader.classList.add("logo-transform");
+    }
+
+    const RemoveMenuFixedAndThin = () =>{
+        menu.style.position = "relative";
+        redesHeader.classList.remove("display-none");
+        textHeader.classList.remove("display-none");
+        menu.style.height = "160px";
+        logoHeader.classList.remove("logo-transform");
+    }
+
 
 
     
@@ -45,26 +65,15 @@ export function header(){
        }
     });
 
-    
-    /*
-    
-    Efecto scroll menu
-    const menu = d.querySelector(".menu-container");
-    const topMenu = menu.offsetTop;
-
-    const fixNav = e =>{
-        if(w.scrollY >= topMenu && screen.width > 950){
-            d.body.style.paddingTop = menu.offsetHeight + "px";
-            d.body.classList.add("sticky");
-        }else{
-            d.body.style.paddingTop = 0;
-            d.body.classList.remove("sticky");
-        } 
-  
-       
+    //Efecto scroll menu
+    if(screen.width>800){
+        w.addEventListener("scroll", () =>{
+            scrollY >100 ?  menuFixedAndThin() : RemoveMenuFixedAndThin()        
+        })
     }
- 
-    w.addEventListener("scroll", fixNav);
+    
 
-    */
+   
+
+
 }

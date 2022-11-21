@@ -77,6 +77,20 @@ textarea{
   .line-4{
       font-size: 22px!important;
   }
+
+  .display-none{
+    display: none!important;
+  }
+
+  .logo-transform{
+    position: absolute!important;
+    top: 10px!important;
+    left: 117px!important;
+    width: 69px!important;
+    transition: 0.3s;
+   
+
+  }
   
   @keyframes anim {
     0%{
@@ -261,7 +275,10 @@ header{
     position: fixed;
     z-index: 3;
     transform: translateY(-1000px);
+    transition: 0.4s;
     padding: 29px;
+ 
+
 }
 
 .header a{
@@ -290,8 +307,8 @@ header{
     font-family: var(--font-2);
     font-display: swap;
     width: 100vw;
-    position: relative;
-    top: 96px;
+    position: absolute;
+    top: 15%;
     z-index: 2;
     margin: 0 auto;
     text-align: center;
@@ -678,8 +695,7 @@ header{
 }
 
 .cardd li::before{
-    font-family: 'Material Icons';
-    content: "\e86c";
+    content: "\2714";
     font-size: 20px;
     position: relative;
     top: 5px;
@@ -727,6 +743,11 @@ header{
     padding-bottom: 10px;
     padding-left: 32px;
     padding-right: 32px;
+}
+
+.btn-consultar-card a:hover{
+   color: var(--color-second-violet);
+   background-color: transparent;
 }
 
 
@@ -1170,6 +1191,7 @@ input{
 
     .logo-header{
         width: 70px;
+        transition: 0.3s;
     }
 
     .text-mobile, .redes-mobile, .logo-mobile-menu{
@@ -1235,6 +1257,8 @@ input{
         top: 0px;
         position: relative;
         transform: translateY(0px);
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    
     }
 
     .header h1{
@@ -1415,7 +1439,7 @@ input{
     }
 
     .servicios-container{
-        margin-top: 500px;
+        margin-top: 650px;
         padding-left: 120px;
         padding-right: 120px;
     }
