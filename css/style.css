@@ -83,7 +83,7 @@ textarea{
   }
 
   .logo-transform{
-    position: absolute!important;
+ 
     top: 10px!important;
     left: 117px!important;
     width: 69px!important;
@@ -343,6 +343,8 @@ header{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    flex-wrap: wrap;
+   justify-content: center;
 }
 
 .menu a:hover{
@@ -1109,6 +1111,28 @@ input{
     animation-delay: 0.3s;
 }
 
+.cripto-section{
+    padding: 150px 10px 100px 10px;
+  
+}
+
+.cripto-section h1{
+    font-family: var(--font-2);
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 121.02%;
+    /* or 29px */
+    color: var(--color-second-violet);
+    margin-bottom: 8px!important;  
+}
+
+.cripto-section h2{
+    font-family: var(--font-2);
+    font-size: 25px;
+}
+
 @media (min-width: 600px){
     
     .line:first-child{
@@ -1196,14 +1220,22 @@ input{
         
       }
 
+      .cripto-section{
+        padding: 170px 10px 100px 10px;
+      }
+
+      .cripto-section h1{
+        padding-bottom: 40px;
+      }
+
      
 
-}
+     }
 
 @media (min-width: 800px){
 
     .logo-header{
-        width: 70px;
+        width: 58px;
         transition: 0.3s;
     }
 
@@ -1304,10 +1336,10 @@ input{
     }
 
     .text-header .logo-header{
-        position: absolute;
-        top: 55px;
+        
+        top: 46px;
         /* filter: invert(14%) sepia(24%) saturate(740%) hue-rotate(189deg) brightness(44%) contrast(94%); */
-        left: 117px;
+        left: 151px;
     }
 
     .text-header::after{
@@ -1540,7 +1572,17 @@ input{
         position: relative;
         left: 58px;
     }
+
+     /****************************************CRYPTO PAGE****************************************************/
     
+    .cripto-section{
+        padding: 10px 120px 100px 120px;
+      
+    }
+
+    .cripto-section h2{
+        margin-bottom: 0px;
+    }
 
     
 
@@ -1550,7 +1592,7 @@ input{
 
     
     .logo-header{
-        width: 90px;
+        width: 58px;
     }
 
 
@@ -1615,6 +1657,8 @@ input{
     #show{
         width: 79%;
     }
+
+     
 
    
     

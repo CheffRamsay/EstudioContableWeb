@@ -36,7 +36,7 @@ export function header(){
 
     const menuFixedAndThin = () =>{
         menu.style.position = "fixed";
-        menu.style.height = "90px";
+        menu.style.height = "150px";
         redesHeader.classList.add("display-none");
         textHeader.classList.add("display-none");
         logoHeader.classList.add("logo-transform");
