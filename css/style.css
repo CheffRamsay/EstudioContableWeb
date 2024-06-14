@@ -466,6 +466,17 @@ header{
     animation-delay: 0.3s;
 }
 
+.text-card p{
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 103%;
+    font-family: var(--font-1);
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+    color: #838383;
+}
+
 .botones-container{
     margin-top: 8px;
 }
@@ -673,13 +684,13 @@ header{
 .servicios-container ul {
     list-style-type: none;
     list-style: none;
-    margin: 0 0 0 25px;
+    margin: 20px 0 0 25px;
     padding: 0;
     text-indent: -1.6rem;
 
 }
 
-.servicios-container ul li{
+.servicios-container ul li {
     margin-bottom: 8px;
     font-size: 16px;
     line-height: 103%;
@@ -689,6 +700,8 @@ header{
     font-weight: normal;
     color: #838383;
 }
+
+
 
 .cardd{
     margin-bottom: 80px;
@@ -1407,6 +1420,8 @@ input{
     .administracion-cons-li li{
         margin-bottom: 5px!important;
     }
+
+    .servicios-container ul
 
     .ul-sociedades li{
         margin-bottom: 6px!important;
