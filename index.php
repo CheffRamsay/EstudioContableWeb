@@ -71,8 +71,8 @@
                         Técnica en Comercialización,
                         Especialista en PYMES,<br>
                         Perito Auxiliar de Justicia.<br>
-                        marisasotelo.ms@gmail.com<br>
-                        estudiocontablesotelo1979@gmail.com
+                        <strong>marisasotelo.ms@gmail.com</strong><br>
+                        <strong>estudiocontablesotelo1979@gmail.com</strong>
                     </span>
                     
                     <div class="animated-text">

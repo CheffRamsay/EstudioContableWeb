@@ -10,8 +10,8 @@
                                           que trabajan incansablemente para mantenerse a la vanguardia. 
                                           Abordamos cada problema desde múltiples ángulos.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="icon" href="/img/favicon.ico">
         
         <!--Google Search Console Canonical
         <link rel="canonical" href="https://estudiocontablesotelo.com.ar/">

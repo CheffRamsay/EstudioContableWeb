@@ -63,16 +63,23 @@ textarea{
     height: 48px;
     overflow: hidden;
     margin: 20px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
 }
 
 .animated-text p{
    box-sizing: border-box;
+    animation: scroll 25s linear infinite;
 }
 
+
+    @keyframes scroll {
+        0% { transform: translateY(50px); }
+        95% { transform: translateY(calc(-175px * 3)); }
+        100% { transform: translateY(0);}
+   }
   
-  .line:first-child{
-    animation: anim 15s infinite;
-  }
+ 
 
   .line-4{
       font-size: 22px!important;
@@ -92,45 +99,6 @@ textarea{
 
   }
   
-  @keyframes anim {
-    0%{
-      margin-top: 5px;
-    }
-    10%{
-      margin-top: 5px;
-    }
-    20%{
-    margin-top: -35px;
-    }
-    30%{
-      margin-top: -75px;
-    }
-    40%{
-      margin-top: -130px;
-    }
-
-    50%{
-        margin-top: -185px; 
-    }
-
-    60%{
-        margin-top: -225px;  
-    }
-
-    70%{
-        margin-top: -265px;  
-    }
-
-    80%{
-        margin-top: -320px;  
-    }
-
-    100%{
-        margin-top: 0px; 
-    }
-
-    
-  }
 
   @keyframes fade-in-bottom {
     0% {
@@ -993,6 +961,7 @@ input{
     color: var(--color-white);
     text-decoration: none;
     padding-bottom: 10px;
+    text-align: center;
 }
 
 .logo-footer-1:nth-child(1){
@@ -1120,7 +1089,7 @@ input{
     font-family: var(--font-2);
     font-display: swap;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 40px;
     line-height: 121.02%;
     /* or 29px */
@@ -1128,17 +1097,27 @@ input{
     margin-bottom: 8px!important;  
 }
 
+
+
 .cripto-section h2{
     font-family: var(--font-2);
     font-size: 25px;
 }
 
+.cripto-section p{
+    font-family: var(--font-1); 
+    font-size: 16px;
+}
+
+.cripto-section ul li{
+    font-family: var(--font-1);
+    font-size: 16px; 
+ }
+ 
+
+
 @media (min-width: 600px){
     
-    .line:first-child{
-        animation: anim 10s infinite;
-      }
-
     .text-content h1{
         font-size: 50px;
         width: 80vw;
